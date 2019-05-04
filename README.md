@@ -29,7 +29,7 @@ Run `npm run docs:compodoc` to generate compodoc documentation. Replace with
 
 ## Docker
 
-Run `npm run docker:build` to build docker image with multi stage build.
+Run `npm run docker:compose:build` to build docker compose and then `npm run docker:compose:run` to run cypress test.
 
 ## Lib
 
