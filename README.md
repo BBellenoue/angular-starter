@@ -4,24 +4,33 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of
+ the source files.
 
-## Code scaffolding
+## Build prod
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm run build:dev` to build the project. The build artifacts will be stored in the `dist/` directory. 
+Run `npm run build:prod` for a production build.
 
-## Build
+## Cypress E2E testing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run cypress:open` to launch Cypress.
+Replace <MyKey> with you Cypress Dashboard Service Key and run `npm run cypress:run-record` to launch Cypress with cmd option and 
+record to Cypress Dashboard Service.
 
-## Running unit tests
+## Format code
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run format:all` to format typescript with prettier and HTML.
 
-## Running end-to-end tests
+## Compodoc
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run docs:compodoc` to generate compodoc documentation. Replace with 
+`npm run docs:compodoc:serve:watch` to watch modification
 
-## Further help
+## Docker
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run docker:build` to build docker image with multi stage build.
+
+## Lib
+
+NGXS and Material Angular are installed with the npm install
