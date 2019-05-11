@@ -6,4 +6,4 @@ steps:
     args: ["push", "gcr.io/$PROJECT_ID/angular-starter"]
 
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['beta', 'run', 'deploy', 'angular-starter', '--image', 'gcr.io/$PROJECT_ID/angular-starter:${SHORT_SHA}', '--region', 'europe-west3']
+    args: ['beta', 'run', 'deploy', 'angular-starter', '--image', 'gcr.io/$PROJECT_ID/angular-starter:${SHORT_SHA}', '--region', 'us-central1']
